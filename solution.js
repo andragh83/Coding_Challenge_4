@@ -1,6 +1,7 @@
 const fs = require("fs");
 
 //Part 1
+
 fs.readFile("./input.txt", (err, data) => {
     console.time("funchallenge part 1");
     if (err) {
@@ -9,6 +10,7 @@ fs.readFile("./input.txt", (err, data) => {
     
     var file = data.toString();
 
+    // alternative solution - seems slower
     // var up = (file.match(new RegExp("\\(", "g")) || []).length;
     // var down = (file.match(new RegExp("\\)", "g")) || []).length;
 
@@ -32,6 +34,7 @@ fs.readFile("./input.txt", (err, data) => {
 });
 
 //Part 2
+
 fs.readFile("./input.txt", (err, data) => {
     console.time("funchallenge part 2");
     if (err) {
