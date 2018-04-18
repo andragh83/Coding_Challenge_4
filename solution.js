@@ -1,4 +1,5 @@
 const fs = require("fs");
+
 //Part 1
 fs.readFile("./input.txt", (err, data) => {
     console.time("funchallenge part 1");
